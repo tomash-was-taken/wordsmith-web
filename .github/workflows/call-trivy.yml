@@ -1,0 +1,9 @@
+name: Call Trivy
+on:
+  push:
+    branches: [master]
+  pull_request:
+jobs:
+  scan:
+    name: Scan
+    uses: tomash-was-taken/actions/.github/workflows/reusable-trivy.yml@main
